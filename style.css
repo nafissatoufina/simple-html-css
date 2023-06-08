@@ -1,3 +1,7 @@
+body{
+  margin: 0px;
+}
+
 /* Styles pour l'en-tête */
 header {
   display: flex;
@@ -8,7 +12,8 @@ header {
 }
 
 .logo img {
-  height: 40px;
+  height: 20px;
+  width: 5px;
 }
 
 nav ul {
@@ -27,13 +32,15 @@ nav ul li a {
 
 /* Styles pour la section principale */
 .image-container {
-  text-align: center;
-  margin-top: -10px;
+  background: url(image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    text-align: center;
+    height: 92vh;
 }
 
-.image-container img {
-  max-width: 100%;
-}
 
 .content {
   position: absolute;
@@ -126,3 +133,7 @@ footer .pfooter a:visited {
 
   /* ... Autres styles pour l'adaptation du menu sur les petits écrans ... */
 }
+.logo img {
+  width: 200px; /* Spécifiez la largeur souhaitée */
+  height: auto; /* Laissez la hauteur automatique pour préserver les proportions */
+ }
