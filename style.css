@@ -1,5 +1,6 @@
-body{
+* {
   margin: 0px;
+  padding: 0px;
 }
 
 /* Styles pour l'en-tête */
@@ -7,13 +8,33 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  background-color: #f2f2f2;
+  flex-direction: column;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 15px;
+  margin-right: 15px;
 }
 
 .logo img {
-  height: auto;
-  width: 200px;
+  height: 20px;
+  width: 5px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start; /* Aligner à droite */
+  width: 100%;
+  background-color: white;
+  height: 60px;
+  position: relative;
+  margin-right: 200px;
+
+
+
 }
 
 nav ul {
@@ -32,15 +53,14 @@ nav ul li a {
 
 /* Styles pour la section principale */
 .image-container {
-  background: url(image.jpg) no-repeat center center fixed; 
+  background: url(image.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-    text-align: center;
-    height: 92vh;
+  text-align: center;
+  height: 92vh;
 }
-
 
 .content {
   position: absolute;
@@ -54,7 +74,7 @@ h1 {
   font-size: 60px;
   margin-bottom: 10px;
   color: #fff;
-  font-weight: normal; /* Ajout de la propriété font-weight */
+  font-weight: normal;
 }
 
 p {
@@ -76,13 +96,14 @@ p {
 footer {
   text-align: center;
   padding: 10px;
-  background-color:rgb(51, 51, 51);
+  background-color: rgb(51, 51, 51);
 }
 
 footer .pfooter a {
   color: white;
 }
- a {
+
+a {
   color: white;
 }
 
@@ -133,7 +154,27 @@ footer .pfooter a:visited {
 
   /* ... Autres styles pour l'adaptation du menu sur les petits écrans ... */
 }
+
 .logo img {
-  width: 200px; /* Spécifiez la largeur souhaitée */
-  height: auto; /* Laissez la hauteur automatique pour préserver les proportions */
+  width: 120px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 10px; /* Ajoutez cette ligne */
+
+
+}
+
+.logo {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 60px;
  }
+ nav p {
+  display: inline;
+  margin-left: 200px;
+  margin-top: 10px; /* Ajoutez cette ligne */
+  font-size: 14px;
+  color: rgb(165, 157, 157);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
